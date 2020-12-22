@@ -1,8 +1,8 @@
 {
-  "name": "Brains - Task 1",
+  "name": "SibDev",
   "version": "17.0.0",
   "private": true,
-  "description": "Тестовое задание от компании Brains - Task 1",
+  "description": "Тестовое задание от компании SibDev",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "^9.7.6",

@@ -62,14 +62,14 @@ gulp.task('images', function () {
 });
 
 gulp.task('webp', function () {
-    return gulp.src('source/img/**/*.{png,jpg}')
+    return gulp.src('source/img/**/*.jpg')
         .pipe(webp({quality: 90}))
         .pipe(gulp.dest('source/img'));
 });
 
 gulp.task('sprite', function () {
-    return gulp.src('source/img/svg/**.svg')
-        .pipe(svgstore({inlineSvg: true}))
+    return gulp.src('source/img/svg/**.{png,svg}')
+        .pipe(svgstore({inlineSvg: false}))
         .pipe(rename('sprite.svg'))
         .pipe(gulp.dest('build/img'));
 });
