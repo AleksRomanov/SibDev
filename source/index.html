@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="utf-8">
+  <link rel="preload" as="font" crossorigin="anonymous" href="fonts/opensans.woff2">
+  <link rel="preload" as="font" crossorigin="anonymous" href="fonts/opensansbold.woff2">
+
+  <link rel="stylesheet" href="css/style.min.css">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>Braind - test</title>
+</head>
+<body>
+
+<div style="display: none;">
+  <include src="build/img/sprite.svg"></include>
+</div>
+
+<main class="main">
+  <section class="reviews">
+    <h1 class="reviews__title">Мои отзывы о товарах </h1>
+    <div class="reviews__title-content">
+      <svg width="15" height="15">
+        <use xlink:href="#oval"></use>
+      </svg>
+      <span>Ваши отзывы будут опубликованы на сайте после проверки модератором.</span>
+    </div>
+    <div class="reviews__wrapper">
+      <table class="reviews-table">
+        <tr class="reviews-table__row reviews-table__row--header">
+          <td class="reviews-table__item reviews-table__item--photo">Фото</td>
+          <td class="reviews-table__item reviews-table__item--name">Наименование товара</td>
+          <td class="reviews-table__item reviews-table__item--reviews">Ваши отзывы</td>
+          <td class="reviews-table__item reviews-table__item--review_status">Статус отзыва</td>
+          <td class="reviews-table__item reviews-table__item--actions">Действия</td>
+        </tr>
+        <tr class="reviews-table__row">
+          <td class="reviews-table__item reviews-table__item--photo">
+            <img class="reviews-table__img" src="img/perf.png" width="41" height="40" alt="" aria-label="Bosh">
+          </td>
+          <td class="reviews-table__item  reviews-table__item-name">Дрель ударная BOSCH PSB 550 RЕ, БЗП<br> Арт.0603130020</td>
+          <td class="reviews-table__item  reviews-table__item-reviews">
+            <div class="reviews-table__rating">
+              <svg width="12" height="11">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg width="12" height="11">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg width="12" height="11">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg width="12" height="11">
+                <use xlink:href="#star"></use>
+              </svg>
+              <svg width="12" height="11">
+                <use xlink:href="#star_2"></use>
+              </svg>
+              <span>4,6</span>
+            </div>
+            <ul class="reviews-table__rating-list">
+              <li class="reviews-table__rating-list-item">Впечатление:5</li>
+              <li class="reviews-table__rating-list-item">Соответствие:4</li>
+              <li class="reviews-table__rating-list-item">Надёжность:5</li>
+            </ul>
+            <p>Значит купил я данную модель, поработал неделю, отказал один аккумулятор, заряд держит так себе, НОООООО МАГАЗИН АДЕКВАТНЫЙ, ОБМЕНЯЛИ НА НОВЫЙ, ПРИЧЁМ ПРИВЕЗЛИ ДОМОЙ. С ТАКИМ ПРОДАВЦОМ ПРИЯТНО...</p>
+            <details class="reviews-table__details">
+              <summary class="reviews-table__spoiler">
+                <div class="spoiler-wrapper">
+                  <span>Подробнее</span>
+                  <svg width="6" height="10">
+                    <use xlink:href="#strelka_vniz"></use>
+                  </svg>
+                </div>
+              </summary>
+              <ul class="text pricing__text">
+                <li>Дополненный отзыв Дополненный отзыв Дополненный отзыв Дополненный отзыв Дополненный отзыв Дополненный отзыв Дополненный отзыв Дополненный отзыв Дополненный отзыв</li>
+              </ul>
+            </details>
+          </td>
+          <td class="reviews-table__item reviews-table__item-review_status">
+            <div class="reviews__status">
+              <p class="reviews__status-item">опубликован</p>
+              <span class="reviews__status-item-data">1 августа, 2018</span>
+            </div>
+          </td>
+          <td class="reviews-table__item reviews-table__item-actions">
+            <button>Дополнить отзыв</button>
+          </td>
+        </tr>
+
+        <tr class="reviews-table__row reviews-table__row--extra">
+          <td class="reviews-table__item reviews-table__item--photo">
+          </td>
+          <td class="reviews-table__item  reviews-table__item-name"></td>
+          <td class="reviews-table__item  reviews-table__item-reviews">
+
+            <div class="reviews-updated">
+              <p>Дополненный отзыв</p>
+              <div class="reviews-table__rating">
+                <svg width="12" height="11">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg width="12" height="11">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg width="12" height="11">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg width="12" height="11">
+                  <use xlink:href="#star"></use>
+                </svg>
+                <svg width="12" height="11">
+                  <use xlink:href="#star_2"></use>
+                </svg>
+                <span>4,6</span>
+              </div>
+              <ul class="reviews-table__rating-list">
+                <li class="reviews-table__rating-list-item">Впечатление:5</li>
+                <li class="reviews-table__rating-list-item">Соответствие:4</li>
+                <li class="reviews-table__rating-list-item">Надёжность:5</li>
+              </ul>
+              <span>Год прошел, работает как пушка!</span>
+            </div>
+            <div class="swiper-container reviews-swiper">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide reviews-slide">
+                  <img class="" src="img/shurik.png" width="70" height="70">
+                </div>
+                <div class="swiper-slide">
+                  <img class="" src="img/bosh.png" width="70" height="70">
+                </div>
+              </div>
+            </div>
+          </td>
+          <td class="reviews-table__item reviews-table__item-review_status">
+            <div class="reviews__status">
+              <p class="reviews__status-item">на модерации</p>
+              <span class="reviews__status-item-data">19 августа, 2018</span>
+            </div>
+          </td>
+          <td class="reviews-table__item reviews-table__item-actions">
+          </td>
+        </tr>
+
+        <tr class="reviews-table__row reviews-table__row--ekran">
+          <td class="reviews-table__item reviews-table__item--photo">
+            <img class="reviews-table__img" src="img/ekran.png" width="42" height="40" alt="" aria-label="Ekran">
+          </td>
+          <td class="reviews-table__item reviews-table__item-name">Декоративный металлический экран на радиатор 3-х секционный 3 ДМЭР</td>
+          <td class="reviews-table__item reviews-table__item-reviews">
+            <span>К сожалению, ваш отзыв не прошёл модерацию.</span>
+          </td>
+          <td class="reviews-table__item reviews-table__item-review_status">
+            <div class="reviews__status">
+              <p class="reviews__status-item">Не опубликован</p>
+              <span>23 июня, 2019</span>
+            </div>
+          </td>
+        </tr>
+      </table>
+    </div>
+  </section>
+
+  <section class="reviews-popup-swiper">
+    <div class="swiper-container reviews-popup">
+      <div class="swiper-wrapper">
+        <div class="swiper-slide">1</div>
+        <div class="swiper-slide">2</div>
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<script src="js/libs/swiper.min.js"></script>
+<script src="js/scripts.js"></script>
+
+</body>
+</html>
