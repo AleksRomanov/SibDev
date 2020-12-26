@@ -4,9 +4,9 @@
   <meta charset="utf-8">
   <link rel="preload" as="font" crossorigin="anonymous" href="fonts/opensans.woff2">
   <link rel="preload" as="font" crossorigin="anonymous" href="fonts/opensansbold.woff2">
-
-  <link rel="stylesheet" href="css/style.min.css">
   <meta name="viewport" content="width=device-width,initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="css/style.min.css">
+
   <title>SibDev</title>
 </head>
 <body>
@@ -15,57 +15,142 @@
   <include src="build/img/sprite.svg"></include>
 </div>
 
-<main class="main">
-  <section class="site">
-    <nav class="site-sidebar">
-      <svg width="121" height="50">
-        <use xlink:href="#logo"></use>
-      </svg>
-      <ul class="site-sidebar__list">
-        <li class="site-sidebar__list-item">
-          <svg width="24" height="24">
-            <use xlink:href="#catalog"></use>
-          </svg>
-          <span>Каталог</span>
-        </li>
-        <li class="site-sidebar__list-item">
-          <svg width="24" height="24">
-            <use xlink:href="#health"></use>
-          </svg>
-          <span>Здоровье</span>
-        </li>
-        <li class="site-sidebar__list-item">
-          <svg width="24" height="24">
-            <use xlink:href="#beauty"></use>
-          </svg>
-          <span>Красота</span>
-        </li>
-        <li class="site-sidebar__list-item--active">
-          <svg width="24" height="24">
-            <use xlink:href="#enjoy"></use>
-          </svg>
-          <span>Развлечения</span>
-        </li>
-        <li class="site-sidebar__list-item">
-          <svg width="24" height="24">
-            <use xlink:href="#car"></use>
-          </svg>
-          <span>Авто</span>
-        </li>
-      </ul>
-    </nav>
 
+<div class="site my-page">
+  <div id="my-header">
+
+    <div class="site-sidebar">
+      <svg class="site-logo" width="67" height="24">
+        <use xlink:href="#logoMobile"></use>
+      </svg>
+
+      <a href="#my-menu" class="hamburger hamburger--emphatic site-sidebar-hamburger">
+        <svg width="26" height="20">
+          <use xlink:href="#hamburger"></use>
+        </svg>
+        <span class="hamburger-box"><span class="hamburger-inner"></span></span>
+      </a>
+
+      <nav id="my-menu" class="mm-menu">
+        <ul class="site-sidebar__list">
+          <li class="site-sidebar__list-item">
+            <a href="#product">
+              <svg width="24" height="24">
+                <use xlink:href="#catalog"></use>
+              </svg>
+              <span>Каталог</span>
+            </a>
+          </li>
+          <li class="site-sidebar__list-item">
+            <a href="#product">
+              <svg width="24" height="24">
+                <use xlink:href="#health"></use>
+              </svg>
+              <span>Здоровье</span>
+            </a>
+          </li>
+          <li class="site-sidebar__list-item">
+            <a href="#product">
+              <svg width="24" height="24">
+                <use xlink:href="#beauty"></use>
+              </svg>
+              <span>Красота</span>
+            </a>
+          </li>
+          <li class="site-sidebar__list-item--active">
+            <a href="#product">
+              <svg class="active-line" width="24" height="24">
+                <use xlink:href="#line"></use>
+              </svg>
+              <svg width="24" height="24">
+                <use xlink:href="#enjoy"></use>
+              </svg>
+              <span>Развлечения</span>
+            </a>
+          </li>
+          <li class="site-sidebar__list-item">
+            <a href="#product">
+              <svg width="24" height="24">
+                <use xlink:href="#car"></use>
+              </svg>
+              <span>Авто</span>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </div>
+
+  <div>
     <div class="site-header">
       <h1>Развлечения</h1>
+      <svg width="20" height="20">
+        <use xlink:href="#search"></use>
+      </svg>
+      <input type="search" name="shop_name" value="Какой магазин вам нужен?">
     </div>
-<!--    <div class="site-content">-->
+    <div class="site-content">
+      <ul class="site-content-list">
+        <li class="site-content-list__item">
+          <h2>ПРОБКА НА МИРА</h2>
+          <p>Вечер для двоих</p>
+          <span style="color: red">-50%</span>
+          <span></span>
+          <img class="item-background" src="./img/vine.jpg" width="130" height="161" alt="Пробка на Мира">
+        </li>
+        <li class="site-content-list__item">
+          <img src="" alt="">
+          <span></span>
+        </li>
+        <li class="site-content-list__item">
+          <img src="" alt="">
+          <span></span>
+        </li>
+        <li class="site-content-list__item">
+          <img src="" alt="">
+          <span></span>
+        </li>
+        <li class="site-content-list__item">
+          <img src="" alt="">
+          <span></span>
+        </li>
+        <li class="site-content-list__item">
+          <img src="" alt="">
+          <span></span>
+        </li>
+        <li class="site-content-list__item">
+          <img src="" alt="">
+          <span></span>
+        </li>
+        <li class="site-content-list__item">
+          <img src="" alt="">
+          <span></span>
+        </li>
+        <li class="site-content-list__item">
+          <img src="" alt="">
+          <span></span>
+        </li>
+        <li class="site-content-list__item">
+          <img src="" alt="">
+          <span></span>
+        </li>
+        <li class="site-content-list__item">
+          <img src="" alt="">
+          <span></span>
+        </li>
+        <li class="site-content-list__item">
+          <img src="" alt="">
+          <span></span>
+        </li>
+      </ul>
+    </div>
+  </div>
+</div>
 
-<!--    </div>-->
-  </section>
-</main>
 
-<script src="js/libs/swiper.min.js"></script>
-<script src="js/scripts.js"></script>
+<script src="js/vendor/vendor.min.js"></script>
+<script src="js/main.min.js"></script>
 
 </body>
 </html>
+

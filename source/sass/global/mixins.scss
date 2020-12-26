@@ -4,8 +4,15 @@
   }
 }
 
-@mixin tablet-max {
-  @media (max-width: $tablet-max - 1px) {
+@mixin tablet {
+  @media (max-width: $tablet - 1px) {
     @content;
   }
 }
+
+@mixin desktop {
+  @media (max-width: $desktop - 1px) {
+    @content;
+  }
+}
+

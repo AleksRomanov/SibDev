@@ -1,5 +1,4 @@
-//libraries
-@import "libs/swiper.min";
+@import "libs/mmenu";
 @import "global/variables";
 @import "global/mixins";
 @import "global/normalize";
@@ -7,4 +6,4 @@
 @import "global/fonts";
 @import "blocks/button";
 @import "blocks/index/main";
-@import "source/sass/blocks/index/site";
+@import "blocks/index/site";
