@@ -17,7 +17,7 @@ const mmenu = () => {
                 // ],
                 // "pageScroll": true,
               sidebar: {
-                collapsed: "(min-width: 320px)",
+                collapsed: "(min-width: 240px)",
                 expanded: "(min-width: 1440px)"
               },
                 pageScroll: {
