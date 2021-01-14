@@ -5,25 +5,17 @@
   color: black;
   overflow: hidden;
   display: flex;
-
-  @include tablet {
-    margin-top: 0;
-  }
-
-  @include mobile {
-    margin-top: 0;
-  }
 }
 
 .site-sidebar {
   position: relative;
 
-  @include tablet {
+  @include desktop {
     &::before {
       content: " ";
       position: absolute;
       top: 0;
-      left: 54px;
+      left: 0;
       background-image: url("../img/svg/ushko.svg");
       width: 48px;
       height: 106px;
@@ -38,21 +30,23 @@
   margin: 0 auto;
   margin-bottom: 60px;
 
-  @include tablet {
+  @include desktop {
     background-image: url("../img/svg/logoTablet.svg");
     background-size: cover;
     width: 25px;
     height: 24px;
     margin-bottom: 68px;
+    margin-right: auto;
+    margin-left: 40px;
   }
 }
 
 .site-sidebar-hamburger {
-  @include tablet {
+  @include desktop {
     position: absolute;
     content: " ";
-    top: 43px;
-    left: 59px;
+    top: 42px;
+    left: 10px;
     z-index: 3;
   }
 }
@@ -81,14 +75,13 @@
   display: flex;
   align-items: center;
 
-
   @include tablet {
     min-height: 60px;
     margin: 0 auto;
   }
 
   & span {
-    @include tablet {
+    @include desktop {
       display: none;
     }
   }
@@ -107,46 +100,17 @@
     }
   }
 
-  &--active {
+  &--selected {
     position: relative;
-    padding-left: 40px;
     min-height: 64px;
     display: flex;
     align-items: center;
     color: $active;
 
-    @include tablet {
-      min-height: 60px;
-      margin: 0 auto;
-    }
-
-    & span {
-      @include tablet {
-        display: none;
-      }
-    }
-
     & a {
       text-decoration: none;
       color: $active;
       padding: 0;
-    }
-
-    & .active-line {
-      position: absolute;
-      width: 24px;
-      height: 0;
-      left: -13px;
-      top: 29px;
-      background-color: #34ABE0;
-
-      border: 3px solid #34ABE0;
-      transform: rotate(90deg);
-
-      @include tablet {
-        left: -123px;
-        top: 26px;
-      }
     }
 
     & svg {
@@ -164,14 +128,21 @@
 
 .site-header {
   position: relative;
-  width: 1200px;
   box-sizing: border-box;
   padding: 40px 60px;
+
+  @include desktop {
+    padding: 40px 26px;
+  }
 
   & h1 {
     text-align: left;
     margin: 0;
     margin-bottom: 30px;
+
+    @include desktop {
+      text-align: right;
+    }
   }
 
   & input {
@@ -182,6 +153,10 @@
     border-radius: 50px;
     box-sizing: border-box;
     padding-left: 44px;
+
+    @include desktop {
+      width: 612px;
+    }
   }
 
 
@@ -192,19 +167,23 @@
     top: 107px;
     left: 75px;
     z-index: 1;
+
+    @include desktop {
+      left: 40px;
+    }
   }
 
   @include tablet {
-    margin: 0;
-    width: 665px;
-    height: 181px;
-    padding: 40px 0 0 60px;
+    //margin: 0;
+    ////min-width: 665px;
+    //height: 181px;
+    //padding: 40px 0 0 60px;
   }
 }
 
 .site-content {
   background: $content;
-  min-width: 1200px;
+  //min-width: 1200px;
   //min-height: 844px;
   box-sizing: border-box;
   padding: 40px 40px 100px 40px;
@@ -221,7 +200,7 @@
 
 .site-content-list__item {
   position: relative;
-  width: 347px;
+  min-width: 347px;
   height: 160px;
   margin-right: 20px;
   margin-bottom: 20px;
@@ -252,7 +231,7 @@
 
 .my-header a {
   display: block;
-  width: 28px;
+  min-width: 28px;
   height: 18px;
   padding: 11px;
   margin: 2px;
@@ -263,6 +242,10 @@
 
 #my-header {
   display: none;
+
+  @include desktop {
+    display: block;
+  }
 }
 
 .mm-navbar__title {
@@ -276,6 +259,12 @@
 .mm-listitem__text {
   box-sizing: border-box;
   padding-left: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.mm-listitem_selected {
+  background-color: rgba(255, 255, 255, 1);
 }
 
 .mm-listitem:after {
@@ -283,9 +272,17 @@
 }
 
 .mm-menu {
-  --mm-sidebar-expanded-size: 240px;
+  //--mm-sidebar-expanded-size: 240px;
+  //--mm-sidebar-collapsed-size: 104px;
 }
 
 .mm-wrapper {
   --mm-sidebar-expanded-size: 240px;
+  --mm-sidebar-collapsed-size: 104px;
+
+  @include desktop {
+    --mm-sidebar-expanded-size: 100px;
+    --mm-sidebar-collapsed-size: 104px;
+  }
 }
+
