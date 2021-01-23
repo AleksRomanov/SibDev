@@ -64,7 +64,6 @@
     padding-top: 40px;
 
     .site-logo {
-      margin: 0 auto;
       margin-bottom: 68px;
     }
   }
@@ -94,10 +93,6 @@
   & a {
     text-decoration: none;
     color: #333333;
-
-    @include tablet {
-      padding: 0;
-    }
   }
 
   &--selected {
@@ -126,84 +121,115 @@
   }
 }
 
+.site-wrapper {
+  width: 100%;
+  max-width: 2560px;
+}
+
 .site-header {
-  position: relative;
+  width: 100%;
   box-sizing: border-box;
-  padding: 40px 60px;
+  padding: 40px 5%;
 
   @include desktop {
-    padding: 40px 26px;
+    padding: 26px 26px;
   }
 
   & h1 {
     text-align: left;
     margin: 0;
     margin-bottom: 30px;
+    font-size: 28px;
+    line-height: 38px;
 
     @include desktop {
       text-align: right;
     }
+
+    @include tablet {
+      font-size: 24px;
+      line-height: 32px;
+    }
   }
 
-  & input {
+  .site-find {
     position: relative;
-    width: 1080px;
+  }
+
+  .site-find svg {
+    fill: none;
+    position: absolute;
+    content: " ";
+    top: 15px;
+    left: 15px;
+    z-index: 1;
+  }
+
+  .site-find input {
+    width: 100%;
     min-height: 52px;
     border: 1px solid rgba(51, 51, 51, 0.2);
     border-radius: 50px;
     box-sizing: border-box;
     padding-left: 44px;
 
-    @include desktop {
-      width: 612px;
+    @include tablet {
+      font-size: 14px;
+      line-height: 28px;
     }
   }
+}
 
 
-  & svg {
-    fill: none;
-    position: absolute;
-    content: " ";
-    top: 107px;
-    left: 75px;
-    z-index: 1;
+.site-content {
+  position: relative;
+  margin: 0 auto;
+  width: 100%;
+  background: $content;
+  box-sizing: border-box;
+  padding-left: 5%;
+  padding-right: 5%;
 
-    @include desktop {
-      left: 40px;
-    }
+  @include desktop {
+    padding: 27px 26px 0 26px;
   }
 
   @include tablet {
-    //margin: 0;
-    ////min-width: 665px;
-    //height: 181px;
-    //padding: 40px 0 0 60px;
+    padding: 27px 26px 0 10px;
   }
 }
 
-.site-content {
-  background: $content;
-  //min-width: 1200px;
-  //min-height: 844px;
-  box-sizing: border-box;
-  padding: 40px 40px 100px 40px;
-}
-
 .site-content-list {
-  margin: 0;
   padding: 0;
+  margin: 0 auto;
+  margin-left: -21px;
   list-style: none;
   display: flex;
   flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
   text-decoration: none;
+
+  @include desktop-full {
+    min-width: 1200px;
+  }
+
+  @include desktop {
+    min-width: 664px;
+  }
+
+  @include tablet {
+    min-width: 320px;
+  }
 }
 
 .site-content-list__item {
   position: relative;
-  min-width: 347px;
-  height: 160px;
-  margin-right: 20px;
+  height: 160.7px;
+  width: 347px;
   margin-bottom: 20px;
+  margin-left: 10px;
+  margin-right: 10px;
   box-sizing: border-box;
   padding: 16px 0 16px 20px;
   display: flex;
@@ -211,14 +237,28 @@
   flex-direction: column;
   border: 1px solid #C4C4C4;
 
+  @include desktop {
+    width: 296px;
+    height: 144px;
+  }
+
+  @include tablet {
+    width: 268px;
+    height: 130px;
+  }
+
   & h2 {
     margin: 0;
     font-size: 16px;
+    line-height: 16px;
   }
 
   & p {
     margin: 0;
     margin-bottom: 40px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: normal;
   }
 }
 
@@ -261,6 +301,10 @@
   padding-left: 40px;
   display: flex;
   align-items: center;
+
+  @include tablet {
+    padding-left: 40px;
+  }
 }
 
 .mm-listitem_selected {
@@ -283,6 +327,11 @@
   @include desktop {
     --mm-sidebar-expanded-size: 100px;
     --mm-sidebar-collapsed-size: 104px;
+  }
+
+  @include tablet {
+    --mm-sidebar-expanded-size: 100px;
+    --mm-sidebar-collapsed-size: 12px;
   }
 }
 
