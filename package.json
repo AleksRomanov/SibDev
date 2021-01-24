@@ -56,10 +56,12 @@
     "gulp-clean-css": "^4.3.0",
     "gulp-concat": "^2.6.1",
     "mmenu-js": "^8.5.20",
+    "node-sass": "^5.0.0",
     "npm-check-updates": "^4.1.2",
     "rollup-plugin-babel": "^4.4.0",
     "rollup-plugin-commonjs": "^10.1.0",
     "rollup-plugin-node-resolve": "^5.2.0",
+    "scss": "^0.2.4",
     "yarn": "^1.22.4"
   }
 }
