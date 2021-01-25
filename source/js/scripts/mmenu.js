@@ -4,6 +4,7 @@ const mmenu = () => {
 
   document.addEventListener(
     "DOMContentLoaded", () => {
+      let menuItemsList = document.querySelector(".site-sidebar__list");
 
       new Mmenu("#my-menu", {
           "setSelected": {
@@ -16,22 +17,22 @@ const mmenu = () => {
             // "(max-width: 12px)": ["fullscreen"]
             // "fullscreen"
           ],
+          hooks: {
+            "open:start": (panel) => {
+              // hamburgerMenu.classList.add('is-active');
+              menuItemsList.classList.add("site-sidebar__list--js-show");
+            },
+            "close:start": (panel) => {
+              // hamburgerMenu.classList.remove('is-active');
+              menuItemsList.classList.remove("site-sidebar__list--js-show");
+
+            }
+          },
           sidebar: {
             collapsed: "(min-width: 320px)",
             expanded: "(min-width: 1440px)"
           }
         }
-
-        // hooks: {
-        //   "open:start": (panel) => {
-        //     hamburgerMenu.classList.add('is-active');
-        //     console.log("Started opening panel: ");
-        //   },
-        //   "close:start": (panel) => {
-        //     hamburgerMenu.classList.remove('is-active');
-        //     console.log("Finished opening panel: ");
-        //   }
-        // },
       );
     }
   );
