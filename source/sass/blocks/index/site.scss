@@ -405,22 +405,6 @@
   transform: translate3d(246px, 0, 0);
 
   @include tablet {
-    transform: translate3d(192  px, 0, 0);
+    transform: translate3d(192px, 0, 0);
   }
 }
-
-//
-//.mm-menu {
-//  @include desktop {
-//    $mm_backgroundColor: red;
-//    transform: translate3d(0, 0, 0);
-//  }
-//
-//  @include tablet {
-//    transform: translate3d(192px, 0, 0) translateX(-192px);
-//  }
-//
-//  @include mobile {
-//    //transform: translate3d(192px, 0, 0);
-//  }
-//}
