@@ -46,24 +46,14 @@
 
   @include desktop {
     display: block;
+    padding: 0;
     position: absolute;
     content: " ";
-    top: 42px;
-    left: 10px;
+    top: 43px;
+    left: 5px;
     z-index: 3;
   }
 }
-
-//.site-sidebar-hamburger {
-//  @include desktop {
-//    display: block;
-//    position: absolute;
-//    content: " ";
-//    top: 42px;
-//    left: 10px;
-//    z-index: 3;
-//  }
-//}
 
 .site-sidebar__list {
   list-style: none;
@@ -100,10 +90,6 @@
   & span {
     @include desktop {
       display: none;
-    }
-
-    @include tablet {
-      //display: none;
     }
   }
 
@@ -170,6 +156,7 @@
   width: 100%;
   box-sizing: border-box;
   padding: 40px 5%;
+  border-bottom: 1px solid #E5E5E5;
 
   @include desktop {
     padding: 26px 26px;
@@ -227,16 +214,14 @@
   width: 100%;
   background: $content;
   box-sizing: border-box;
-  padding-left: 5%;
-  padding-right: 5%;
+  padding: 3% 5% 0 5%;
 
-  @include desktop {
-    padding: 27px 26px 0 26px;
-  }
+  //@include desktop {
+  //  padding: 27px 26px 0 26px;
+  //}
 
   @include tablet {
-    //padding: 27px 26px 0 10px;
-    padding: 0;
+    padding: 9% 6.5% 0 2.5%;
   }
 
 }
@@ -365,11 +350,6 @@
   display: none;
 }
 
-//.mm-menu {
-//  $mm_backgroundColor: red;
-//
-//}
-
 .mm-menu,
 .mm-wrapper {
   --mm-sidebar-collapsed-size: 240px;
@@ -402,9 +382,14 @@
 }
 
 .mm-wrapper_opening .mm-menu_offcanvas.mm-menu_opened ~ .mm-slideout {
-  transform: translate3d(246px, 0, 0);
+  border: none;
+  transform: translate3d(245px, 0, 0);
 
   @include tablet {
     transform: translate3d(192px, 0, 0);
   }
+}
+
+.mm-wrapper_sidebar-expanded .mm-menu_sidebar-expanded {
+  border: none;
 }
