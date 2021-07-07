@@ -1,8 +1,8 @@
 {
-  "name": "Brains - Task 1",
+  "name": "SibDev",
   "version": "17.0.0",
   "private": true,
-  "description": "Тестовое задание от компании Brains - Task 1",
+  "description": "Тестовое задание от компании SibDev",
   "devDependencies": {
     "@htmlacademy/editorconfig-cli": "1.x",
     "autoprefixer": "^9.7.6",
@@ -20,6 +20,7 @@
     "gulp-svgstore": "^7.0.1",
     "gulp-webp": "^4.0.1",
     "posthtml-include": "^1.4.3",
+    "rollup": "^1.32.1",
     "stylelint": "^12.0.1",
     "stylelint-config-htmlacademy": "^0.1.4"
   },
@@ -47,9 +48,21 @@
     "node": "8.16"
   },
   "dependencies": {
+    "concat": "^1.0.3",
     "del": "^5.1.0",
     "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-better-rollup": "^4.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-concat": "^2.6.1",
+    "hamburgers": "^1.1.3",
+    "mmenu-js": "^8.5.20",
+    "node-sass": "^5.0.0",
     "npm-check-updates": "^4.1.2",
+    "rollup-plugin-babel": "^4.4.0",
+    "rollup-plugin-commonjs": "^10.1.0",
+    "rollup-plugin-node-resolve": "^5.2.0",
+    "scss": "^0.2.4",
     "yarn": "^1.22.4"
   }
 }
